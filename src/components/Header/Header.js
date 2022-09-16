@@ -12,7 +12,10 @@ import {
 import { NavLink } from "react-router-dom";
 import logo from '../../app/assets/img/logoMain.png';
 import logo2 from '../../app/assets/img/secondaryLogo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUtensils, faHome, faInfo, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import './Header.css'
+
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -30,22 +33,22 @@ const Header = () => {
                     <Nav className='ms-auto' navbar>
                         <NavItem>
                             <NavLink className='nav-link' to='/'>
-                                <i className='fa fa-home fa-lg' /> Home
+                                <FontAwesomeIcon icon={faHome} size='lg' /> Home
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink className='nav-link' to='/directory'>
-                                <i className='fa fa-list fa-lg' /> Directory
+                                <FontAwesomeIcon icon={faUtensils} size='lg' />Menu
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink className='nav-link' to='/about'>
-                                <i className='fa fa-info fa-lg' /> About
+                                <FontAwesomeIcon icon={faInfo} size='lg' /> About Us
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink className='nav-link' to='/contact'>
-                                <i className='fa fa-address-card fa-lg' /> Contact
+                                <FontAwesomeIcon icon={faEnvelope} size='lg' />Contact Us
                             </NavLink>
                         </NavItem>
                     </Nav>
