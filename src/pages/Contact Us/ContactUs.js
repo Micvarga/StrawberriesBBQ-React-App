@@ -1,4 +1,4 @@
-import ContactForm from "../components/ContactForm/ContactForm";
+import ContactForm from "../../components/ContactForm/ContactForm";
 import { Container, Col, Row } from "reactstrap";
 
 const ContactUsPage = () => {
@@ -6,7 +6,7 @@ const ContactUsPage = () => {
         <>
             <Container>
                 <Row>
-                    <Col>
+                    <Col className="col-12">
                         <h1>Catering and Events</h1>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate rem dignissimos deserunt aut et,
                             eligendi perspiciatis nesciunt, quasi ea, ullam quod? Omnis repudiandae, nesciunt aspernatur sequi

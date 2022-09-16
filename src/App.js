@@ -2,8 +2,10 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header.js';
 import Footer from './components/Footer/Footer.js';
-import ContactUsPage from './pages/ContactUs.js';
+import ContactUsPage from './pages/Contact Us/ContactUs';
+import HomePage from './pages/Home Page/HomePage.js';
 import './App.css';
+
 
 function App() {
 
@@ -11,7 +13,8 @@ function App() {
     <div className='App'>
       <Header />
       <Routes>
-        <Route path='contact' element={<ContactUsPage/>} />
+        <Route path='/' element={<HomePage />} />
+        <Route path='contact' element={<ContactUsPage />} />
       </Routes>
       <Footer />
     </div>
