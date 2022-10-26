@@ -2,32 +2,32 @@
 export const MONTHLYEVENTS = [
     {
         id: 0,
-        event: '5th Annual community Hero Day Aurora Fire Museum',
+        eventLocation: '5th Annual community Hero Day Aurora Fire Museum',
         dates: '10/1 11am-3pm',
     },
     {
         id: 1,
-        event: 'First Friday Food Truck Fest',
+        eventLocation: 'First Friday Food Truck Fest',
         dates: '10/7 5pm-9pm',
     },
     {
         id: 2,
-        event: 'Aurora Farmers Market',
+        eventLocation: 'Aurora Farmers Market',
         dates: '10/8 8am-12pm',
     },
     {
         id: 3,
-        event: 'Oswego Brewing Company',
+        eventLocation: 'Oswego Brewing Company',
         dates: '10/8 4pm-8pm',
     },
     {
         id: 4,
-        event: 'Aurora Country Club',
+        eventLocation: 'Aurora Country Club',
         dates: '10/15 5pm-10pm',
     },
     {
         id: 5,
-        event: 'Aurora Trick or Treat',
+        eventLocation: 'Aurora Trick or Treat',
         dates: '10/29 2pm-4pm',
     }
 ];
