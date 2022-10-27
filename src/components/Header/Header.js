@@ -37,7 +37,7 @@ const Header = () => {
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className='nav-link' to='/directory'>
+                            <NavLink className='nav-link' to='/menu'>
                                 <FontAwesomeIcon icon={faUtensils} size='lg' />Menu
                             </NavLink>
                         </NavItem>
