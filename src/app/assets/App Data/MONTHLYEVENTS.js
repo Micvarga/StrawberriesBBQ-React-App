@@ -3,7 +3,8 @@ export const MONTHLYEVENTS = [
     {
         id: 0,
         eventLocation: '5th Annual community Hero Day Aurora Fire Museum',
-        dates: '10/1 11am-3pm',
+        dates: '10/1',
+        time: '11am-3pm',
     },
     {
         id: 1,
