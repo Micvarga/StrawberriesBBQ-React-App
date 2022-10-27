@@ -22,7 +22,7 @@ export const MEATITEMS = () => [
         name: 'Smoked Bologna Sandwhich',
         description: 'Sliced bologna, smoked slow and low.',
         price: 'Sandwich...............$8',
-    }
+    },
 ];
 
 export const SHAREABLEITEMS = () => [
