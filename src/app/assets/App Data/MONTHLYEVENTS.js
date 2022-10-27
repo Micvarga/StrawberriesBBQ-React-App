@@ -9,25 +9,30 @@ export const MONTHLYEVENTS = [
         id: 1,
         eventLocation: 'First Friday Food Truck Fest',
         dates: '10/7 5pm-9pm',
+        time: '5pm-9pm',
     },
     {
         id: 2,
         eventLocation: 'Aurora Farmers Market',
-        dates: '10/8 8am-12pm',
+        dates: '10/8',
+        time: '8am-12pm',
     },
     {
         id: 3,
         eventLocation: 'Oswego Brewing Company',
-        dates: '10/8 4pm-8pm',
+        dates: '10/8',
+        time: '4pm-8pm',
     },
     {
         id: 4,
         eventLocation: 'Aurora Country Club',
-        dates: '10/15 5pm-10pm',
+        dates: '10/15',
+        time: '5pm-10pm',
     },
     {
         id: 5,
         eventLocation: 'Aurora Trick or Treat',
-        dates: '10/29 2pm-4pm',
+        dates: '10/29',
+        time: '2pm-4pm',
     }
 ];
