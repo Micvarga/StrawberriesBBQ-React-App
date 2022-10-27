@@ -9,7 +9,7 @@ export const MONTHLYEVENTS = [
     {
         id: 1,
         eventLocation: 'First Friday Food Truck Fest',
-        dates: '10/7 5pm-9pm',
+        dates: '10/7',
         time: '5pm-9pm',
     },
     {
