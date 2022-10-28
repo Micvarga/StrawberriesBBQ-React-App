@@ -4,14 +4,14 @@ import './EventCardStyles.css';
 const EventCard = ({ event }) => {
     const { eventLocation, dates, time } = event;
     return (
-        <Card className='card'>
-            <CardBody className='cardBody'>
-                <CardTitle className='cardTitle'>{eventLocation}</CardTitle>
-                <CardSubtitle className='cardSubtitle'>Dates: {dates}</CardSubtitle>
-                <CardSubtitle className='cardSubtitle'>Time:{time} CST</CardSubtitle>
+        <Card className='eventCard'>
+            <CardBody className='eventCardBody'>
+                <CardTitle className='eventCardTitle'>{eventLocation}</CardTitle>
+                <CardSubtitle className='eventCardSubtitle'>Dates: {dates}</CardSubtitle>
+                <CardSubtitle className='eventCardSubtitle'>Time:{time} CST</CardSubtitle>
             </CardBody>
         </Card>
-    );
+    )
 }
 
 export default EventCard;
