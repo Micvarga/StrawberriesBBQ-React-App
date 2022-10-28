@@ -6,6 +6,7 @@ import ContactUsPage from './pages/Contact Us/ContactUs';
 import HomePage from './pages/Home Page/HomePage.js';
 import MenuPage from './pages/Menu Page/MenuPage.js';
 import './App.css';
+import AboutUsPage from './pages/About Us Page/AboutUsPage.js';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='contact' element={<ContactUsPage />} />
         <Route path='menu' element={<MenuPage />} />
+        <Route path='about' element={<AboutUsPage />} />
       </Routes>
       <Footer />
     </div>
