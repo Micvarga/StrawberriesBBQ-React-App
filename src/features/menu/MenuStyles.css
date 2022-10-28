@@ -2,9 +2,20 @@
     font-family: 'Caveat', cursive;
 }
 
+@media screen and (min-width:1125px) {
+    .menuBody {
+        background: url(/src/app/assets/img/MenuBackground2.jpg);
+        background-position-x: right;
+        background-position-y: center;
+        background-repeat: no-repeat;
+
+    }
+}
+
 h1 {
     color: #c73e48;
     font-weight: 900;
+    text-decoration: underline;
     font-family: 'Roboto Slab', serif;
     display: flex;
     justify-content: center;
