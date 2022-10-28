@@ -1,12 +1,14 @@
 import { MENUITEMS } from '../../app/assets/App Data/MENUITEMS';
 import { Col, Container, Row } from 'reactstrap';
 import MenuCard from "./MenuCard";
+import './MenuStyles.css';
 
 
 const MenuItemsList = () => {
     return (
         <Container>
-            <h1>Meats</h1>
+            <h1>Menu</h1>
+            <h2>Meats</h2>
             <Row className='ms-auto'>
                 {MENUITEMS.filter((menuItem) => {
                     return menuItem.type === 'meats';
@@ -20,7 +22,7 @@ const MenuItemsList = () => {
                     })
                 }
             </Row>
-            <h1>Shareables/Snacks</h1>
+            <h2>Shareables/Snacks</h2>
             <Row className='ms-auto'>
                 {MENUITEMS.filter((menuItem) => {
                     return menuItem.type === 'shareable';
@@ -34,7 +36,7 @@ const MenuItemsList = () => {
                     })
                 }
             </Row>
-            <h1>Sides by Mama Jeffries</h1>
+            <h2>Sides by Mama Jeffries</h2>
             <Row className='ms-auto'>
                 {MENUITEMS.filter((menuItem) => {
                     return menuItem.type === 'sides';
@@ -48,7 +50,7 @@ const MenuItemsList = () => {
                     })
                 }
             </Row>
-            <h1>Desserts</h1>
+            <h2>Desserts</h2>
             <Row className='ms-auto'>
                 {MENUITEMS.filter((menuItem) => {
                     return menuItem.type === 'desserts';
