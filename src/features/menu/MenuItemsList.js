@@ -1,4 +1,4 @@
-import { MEATITEMS, SHAREABLEITEMS, SIDEITEMS, DESSERTITEMS } from "../../app/assets/App Data/MENUITEMS.js";
+import { MENUITEMS } from '../../app/assets/App Data/MENUITEMS';
 import { Col, Container, Row } from 'reactstrap';
 import MenuCard from "./MenuCard";
 
@@ -6,46 +6,62 @@ import MenuCard from "./MenuCard";
 const MenuItemsList = () => {
     return (
         <Container>
+            <h1>Meats</h1>
             <Row className='ms-auto'>
-                {MEATITEMS.map((menuItem) => {
-                    return (
-                        <Col key={menuItem.id}>
-                            {/* <h1>Meats</h1> */}
-                            <MenuCard menuItem={menuItem} />
-                        </Col>
-                    );
-                })}
+                {MENUITEMS.filter((menuItem) => {
+                    return menuItem.type === 'meats';
+                })
+                    .map((menuItem) => {
+                        return (
+                            <Col key={menuItem.id} sm='12'>
+                                <MenuCard menuItem={menuItem} />
+                            </Col>
+                        )
+                    })
+                }
             </Row>
-            {/* <Row className='ms-auto'>
-                {SHAREABLEITEMS.map((menuItem) => {
-                    return (
-                        <Col key={menuItem.id}>
-                            <h1>Meats</h1>
-                            <MenuCard menuItem={menuItem} />
-                        </Col>
-                    );
-                })}
-            </Row>
+            <h1>Shareables/Snacks</h1>
             <Row className='ms-auto'>
-                {SIDEITEMS.map((menuItem) => {
-                    return (
-                        <Col key={menuItem.id}>
-                            <h1>Meats</h1>
-                            <MenuCard menuItem={menuItem} />
-                        </Col>
-                    );
-                })}
+                {MENUITEMS.filter((menuItem) => {
+                    return menuItem.type === 'shareable';
+                })
+                    .map((menuItem) => {
+                        return (
+                            <Col key={menuItem.id} sm='12'>
+                                <MenuCard menuItem={menuItem} />
+                            </Col>
+                        )
+                    })
+                }
             </Row>
+            <h1>Sides by Mama Jeffries</h1>
             <Row className='ms-auto'>
-                {DESSERTITEMS.map((menuItem) => {
-                    return (
-                        <Col key={menuItem.id}>
-                            <h1>Meats</h1>
-                            <MenuCard menuItem={menuItem} />
-                        </Col>
-                    );
-                })}
-            </Row> */}
+                {MENUITEMS.filter((menuItem) => {
+                    return menuItem.type === 'sides';
+                })
+                    .map((menuItem) => {
+                        return (
+                            <Col key={menuItem.id} sm='12'>
+                                <MenuCard menuItem={menuItem} />
+                            </Col>
+                        )
+                    })
+                }
+            </Row>
+            <h1>Desserts</h1>
+            <Row className='ms-auto'>
+                {MENUITEMS.filter((menuItem) => {
+                    return menuItem.type === 'desserts';
+                })
+                    .map((menuItem) => {
+                        return (
+                            <Col key={menuItem.id} sm='12'>
+                                <MenuCard menuItem={menuItem} />
+                            </Col>
+                        )
+                    })
+                }
+            </Row>
         </Container>
     )
 };
