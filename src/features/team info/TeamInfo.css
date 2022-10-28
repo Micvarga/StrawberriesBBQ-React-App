@@ -1,0 +1,32 @@
+.teamInfoContent {
+    background: url('../../app/assets/img/pinkButcherPaper.jpg');
+    background-position: center;
+    border: 1px solid black;
+}
+
+h1,
+h2 {
+    color: whitesmoke;
+    text-decoration: underline;
+    font-family: 'Roboto Slab', serif;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    font-family: 'Caveat', cursive;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.companyStoryText {
+    font-family: 'Caveat', cursive;
+    font-size: xx-large;
+    font-weight: 900;
+}
