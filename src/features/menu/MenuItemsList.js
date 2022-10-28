@@ -6,65 +6,67 @@ import './MenuStyles.css';
 
 const MenuItemsList = () => {
     return (
-        <Container>
+        <>
             <h1>Menu</h1>
-            <h2>Meats</h2>
-            <Row className='ms-auto'>
-                {MENUITEMS.filter((menuItem) => {
-                    return menuItem.type === 'meats';
-                })
-                    .map((menuItem) => {
-                        return (
-                            <Col key={menuItem.id} sm='12'>
-                                <MenuCard menuItem={menuItem} />
-                            </Col>
-                        )
+            <Container className='menuBody'>
+                <h2>Meats</h2>
+                <Row className='ms-auto'>
+                    {MENUITEMS.filter((menuItem) => {
+                        return menuItem.type === 'meats';
                     })
-                }
-            </Row>
-            <h2>Shareables/Snacks</h2>
-            <Row className='ms-auto'>
-                {MENUITEMS.filter((menuItem) => {
-                    return menuItem.type === 'shareable';
-                })
-                    .map((menuItem) => {
-                        return (
-                            <Col key={menuItem.id} sm='12'>
-                                <MenuCard menuItem={menuItem} />
-                            </Col>
-                        )
+                        .map((menuItem) => {
+                            return (
+                                <Col key={menuItem.id} sm='12'>
+                                    <MenuCard menuItem={menuItem} />
+                                </Col>
+                            )
+                        })
+                    }
+                </Row>
+                <h2>Shareables/Snacks</h2>
+                <Row className='ms-auto'>
+                    {MENUITEMS.filter((menuItem) => {
+                        return menuItem.type === 'shareable';
                     })
-                }
-            </Row>
-            <h2>Sides by Mama Jeffries</h2>
-            <Row className='ms-auto'>
-                {MENUITEMS.filter((menuItem) => {
-                    return menuItem.type === 'sides';
-                })
-                    .map((menuItem) => {
-                        return (
-                            <Col key={menuItem.id} sm='12'>
-                                <MenuCard menuItem={menuItem} />
-                            </Col>
-                        )
+                        .map((menuItem) => {
+                            return (
+                                <Col key={menuItem.id} sm='12'>
+                                    <MenuCard menuItem={menuItem} />
+                                </Col>
+                            )
+                        })
+                    }
+                </Row>
+                <h2>Sides by Mama Jeffries</h2>
+                <Row className='ms-auto'>
+                    {MENUITEMS.filter((menuItem) => {
+                        return menuItem.type === 'sides';
                     })
-                }
-            </Row>
-            <h2>Desserts</h2>
-            <Row className='ms-auto'>
-                {MENUITEMS.filter((menuItem) => {
-                    return menuItem.type === 'desserts';
-                })
-                    .map((menuItem) => {
-                        return (
-                            <Col key={menuItem.id} sm='12'>
-                                <MenuCard menuItem={menuItem} />
-                            </Col>
-                        )
+                        .map((menuItem) => {
+                            return (
+                                <Col key={menuItem.id} sm='12'>
+                                    <MenuCard menuItem={menuItem} />
+                                </Col>
+                            )
+                        })
+                    }
+                </Row>
+                <h2>Desserts</h2>
+                <Row className='ms-auto'>
+                    {MENUITEMS.filter((menuItem) => {
+                        return menuItem.type === 'desserts';
                     })
-                }
-            </Row>
-        </Container>
+                        .map((menuItem) => {
+                            return (
+                                <Col key={menuItem.id} sm='12'>
+                                    <MenuCard menuItem={menuItem} />
+                                </Col>
+                            )
+                        })
+                    }
+                </Row>
+            </Container>
+        </>
     )
 };
 
