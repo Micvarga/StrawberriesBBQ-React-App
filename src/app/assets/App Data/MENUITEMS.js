@@ -1,75 +1,78 @@
-export const MEATITEMS = () => [
+export const MENUITEMS = [
     {
         id: 0,
+        type: 'meats',
         name: 'Pork Spare Ribs',
         description: 'Slow smoked and slathered in our house sauce, "Lost in the Sauce".',
         price: '1/4 , 1/2, Full Rack...............$10/16/28',
     },
     {
         id: 1,
+        type: 'meats',
         name: 'Chopped Brisket Sandwich',
         descrption: 'Covered in our Coffee Rub, smoked 18 hours.',
         price: 'Sandwich...............$14',
     },
     {
         id: 2,
+        type: 'meats',
         name: 'Pulled Pork Sandwhich',
         description: 'Chopped pork shoulder, smoked slow and low.',
         price: 'Sandwich...............$12',
     },
     {
         id: 3,
+        type: 'meats',
         name: 'Smoked Bologna Sandwhich',
         description: 'Sliced bologna, smoked slow and low.',
         price: 'Sandwich...............$8',
     },
-];
-
-export const SHAREABLEITEMS = () => [
     {
         id: 0,
+        type: 'shareable',
         name: 'Pork Belly Burn Ends',
         description: 'Crisp pork belly burn ends covered in house',
         price: '1/2 lb...............$10',
     },
     {
         id: 1,
+        type: 'shareable',
         name: 'Smoked Texas Hot Links',
         description: 'Hot and Spicey like the Texas sun',
         price: 'per link...............$7',
     },
-];
-
-export const SIDEITEMS = () => [
     {
         id: 0,
+        type: 'sides',
         name: 'Mac N Cheese',
         description: 'Thich and cheese. Better than the blue box stuff.',
         price: 'per cup...............$4',
     },
     {
         id: 1,
+        type: 'sides',
         name: 'Corn Bake',
         description: 'Homemade delicious corn bake.',
         price: ' per slice...............$4',
     },
     {
         id: 2,
+        type: 'sides',
         name: 'Spicey Cole Slaw',
         description: 'Cole Slaw with a Strawberries BBQ kick!',
         price: 'per slice...............$4',
     },
-];
 
-export const DESSERTITEMS = () => [
     {
         id: 0,
+        type: 'desserts',
         name: 'Smoked Apple Pie',
         description: 'Delicious apple pie slow smoked in our smoker.',
         price: 'per slice...............$4',
     },
     {
         id: 1,
+        type: 'desserts',
         name: `Snickerdoodle S'More.`,
         description: 'Our in house creation. Thick gooey and delicious!',
         price: `per S'More ...............$7`,
