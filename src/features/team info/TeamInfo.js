@@ -1,13 +1,14 @@
 import { Col, Row, Container } from "reactstrap";
 import teamMember from '../../app/assets/img/teamMember.jpg';
+import './TeamInfo.css';
 
 const TeamInfo = () => {
     return (
-        <Container>
+        <Container className="teamInfoContent">
             <Row>
                 <Col sm='12'>
                     <h1>About Strawberries BBQ</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci et vitae ratione
+                    <p className="companyStoryText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci et vitae ratione
                         perspiciatis laudantium assumenda alias, corrupti totam illo vel quia ad rerum ipsa quasi, ipsum
                         neque repellendus sequi.</p>
                 </Col>
