@@ -1,15 +1,16 @@
-import { Card, CardBody, CardSubtitle, CardTitle } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCamera } from '@fortawesome/free-solid-svg-icons';
 
 const MenuCard = ({ menuItem }) => {
     const { name, description, price } = menuItem;
     return (
-        <Card className='card'>
-            <CardBody className='cardBody'>
-                <CardTitle className='cardTitle'>{name}</CardTitle>
-                <CardSubtitle className='cardSubtitle'>{description}</CardSubtitle>
-                <CardSubtitle className='cardSubtitle'>{price}</CardSubtitle>
-            </CardBody>
-        </Card>
+        <div>
+            <h5 className='cardTitle'>{name}</h5>
+            <p className='cardSubtitle'>{description}</p>
+            <p className='cardSubtitle'>{price}<a className='btn'>
+                <FontAwesomeIcon icon={faCamera} size='lg' />
+            </a></p>
+        </div>
     );
 }
 
