@@ -4,8 +4,7 @@
     border: 1px solid black;
 }
 
-h1,
-h2 {
+.teamInfoSubTitle {
     color: whitesmoke;
     text-decoration: underline;
     font-family: 'Roboto Slab', serif;
