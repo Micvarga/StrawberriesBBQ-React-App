@@ -12,7 +12,7 @@
     }
 }
 
-h1 {
+.menuPageTitle {
     color: #c73e48;
     font-weight: 900;
     text-decoration: underline;
@@ -23,11 +23,11 @@ h1 {
     height: 50vh;
 }
 
-h2 {
+.menuPageSubtitle {
     font-family: 'Roboto Slab', serif;
     color: #c73e48;
 }
 
-h3 {
+.menuCardTitle {
     font-weight: 700;
 }

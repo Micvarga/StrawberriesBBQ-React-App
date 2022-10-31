@@ -7,9 +7,9 @@ import './MenuStyles.css';
 const MenuItemsList = () => {
     return (
         <>
-            <h1>Menu</h1>
+            <h1 className='menuPageTitle'>Menu</h1>
             <Container className='menuBody'>
-                <h2>Meats</h2>
+                <h2 className='menuPageSubtitle'>Meats</h2>
                 <Row className='ms-auto'>
                     {MENUITEMS.filter((menuItem) => {
                         return menuItem.type === 'meats';
@@ -23,7 +23,7 @@ const MenuItemsList = () => {
                         })
                     }
                 </Row>
-                <h2>Shareables/Snacks</h2>
+                <h2 className='menuPageSubtitle'>Shareables/Snacks</h2>
                 <Row className='ms-auto'>
                     {MENUITEMS.filter((menuItem) => {
                         return menuItem.type === 'shareable';
@@ -37,7 +37,7 @@ const MenuItemsList = () => {
                         })
                     }
                 </Row>
-                <h2>Sides by Mama Jeffries</h2>
+                <h2 className='menuPageSubtitle'>Sides by Mama Jeffries</h2>
                 <Row className='ms-auto'>
                     {MENUITEMS.filter((menuItem) => {
                         return menuItem.type === 'sides';
@@ -51,7 +51,7 @@ const MenuItemsList = () => {
                         })
                     }
                 </Row>
-                <h2>Desserts</h2>
+                <h2 className='menuPageSubtitle'>Desserts</h2>
                 <Row className='ms-auto'>
                     {MENUITEMS.filter((menuItem) => {
                         return menuItem.type === 'desserts';
