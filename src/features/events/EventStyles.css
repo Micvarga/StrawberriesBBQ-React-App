@@ -9,6 +9,7 @@
     border: black, solid;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin: 2rem 0rem;
 }
 
 .eventCardSubtitle {
@@ -23,6 +24,6 @@
 
 .eventCardTitle {
     text-decoration: underline;
-    color: #C73E48;
+    color: #fefefe;
     font-size: x-large;
 }

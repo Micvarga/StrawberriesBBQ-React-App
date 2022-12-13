@@ -1,13 +1,14 @@
 import { MONTHLYEVENTS } from '../../app/assets/App Data/MONTHLYEVENTS';
 import { Col, Row } from 'reactstrap';
 import EventCard from '../events/EventCard';
+import './EventStyles.css';
 
 const EventsList = () => {
     return (
-        <Row className='ms-auto'>
+        <Row className='eventsList'>
             {MONTHLYEVENTS.map((event) => {
                 return (
-                    <Col md='5' className='m-4' key={event.id}>
+                    <Col sm='12' key={event.id}>
                         <EventCard event={event} />
                     </Col>
                 );
