@@ -8,6 +8,7 @@ import {
     NavItem,
     Row,
     Col,
+    Container,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import logo from '../../app/assets/img/logoMain.png';
@@ -21,43 +22,45 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <>
+        <Container className="navSection" fluid>
             <Row>
-                <Col className="mainLogo text-center">
+                <Col className="mainLogo text-center" sm='12'>
                     <img src={logo} alt='Strawberries BBQ logo' className='img-fluid' href='/' />
                 </Col>
+                <Col sm='12' className="navBar">
+                    <Navbar dark sticky='top' expand='md'>
+                        <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
+                        <Collapse isOpen={menuOpen} navbar>
+                            <Nav className='ms-auto' navbar>
+                                <NavItem>
+                                    <NavLink className='nav-link' to='/'>
+                                        <FontAwesomeIcon icon={faHome} size='lg' /> Home
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className='nav-link' to='/menu'>
+                                        <FontAwesomeIcon icon={faUtensils} size='lg' /> Menu
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className='nav-link' to='/about'>
+                                        <FontAwesomeIcon icon={faInfo} size='lg' /> About Us
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className='nav-link' to='/contact'>
+                                        <FontAwesomeIcon icon={faEnvelope} size='lg' /> Contact Us
+                                    </NavLink>
+                                </NavItem>
+                            </Nav>
+                        </Collapse>
+                        <NavbarBrand href='/' className='ms-5 d-none d-sm-block'>
+                            <img src={logo2} alt='nucamp logo' className='float-start' />
+                        </NavbarBrand>
+                    </Navbar>
+                </Col>
             </Row>
-            <Navbar dark sticky='top' expand='md'>
-                <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
-                <Collapse isOpen={menuOpen} navbar>
-                    <Nav className='ms-auto' navbar>
-                        <NavItem>
-                            <NavLink className='nav-link' to='/'>
-                                <FontAwesomeIcon icon={faHome} size='lg' /> Home
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className='nav-link' to='/menu'>
-                                <FontAwesomeIcon icon={faUtensils} size='lg' />Menu
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className='nav-link' to='/about'>
-                                <FontAwesomeIcon icon={faInfo} size='lg' /> About Us
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className='nav-link' to='/contact'>
-                                <FontAwesomeIcon icon={faEnvelope} size='lg' />Contact Us
-                            </NavLink>
-                        </NavItem>
-                    </Nav>
-                </Collapse>
-                <NavbarBrand href='/' className='ms-5 d-none d-sm-block'>
-                    <img src={logo2} alt='nucamp logo' className='float-start' />
-                </NavbarBrand>
-            </Navbar>
-        </>
+        </Container>
     )
 }
 

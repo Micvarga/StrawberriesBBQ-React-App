@@ -1,21 +1,31 @@
+.navSection {
+    padding: 0px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+}
+
 .mainLogo {
     background-image: url(../../app/assets/img/cuttingBoard2.jpg);
     background-size: cover;
     background-position: center;
 }
 
-
-
-.navbar-brand img {
-    max-width: 2rem;
-    margin-right: 2rem;
+img {
+    padding-left: 8px;
 }
 
-.navbar {
+.navBar {
     background-color: #C73E48;
     border: 2px solid black;
 }
 
 .nav-link {
     font-size: large;
+}
+
+.navbar-toggler {
+    color: #fefefe;
+    border-color: #fefefe;
 }
