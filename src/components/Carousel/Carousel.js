@@ -6,6 +6,7 @@ import {
     CarouselIndicators,
     CarouselCaption,
 } from 'reactstrap';
+import './CarouselStyles.css';
 import brisket from '../../app/assets/img/brisketChop.jpg';
 import burntEnds from '../../app/assets/img/burntEnds.jpg';
 import ribs from '../../app/assets/img/ribsCloseUp.jpg'
@@ -14,7 +15,7 @@ const images = [
     {
         src: brisket,
         altText: 'Slide 1',
-        caption: 'Slide 1',
+        caption: 'Brisket',
         key: 1,
     },
     {
@@ -59,7 +60,7 @@ function CarouselComponent(args) {
                 onExited={() => setAnimating(false)}
                 key={image.src}
             >
-                <img src={image.src} alt={image.altText} />
+                <img src={image.src} alt={image.altText} className='img-fluid carouselImage' />
                 <CarouselCaption
                     captionText={image.caption}
                     captionHeader={image.caption}
@@ -73,6 +74,8 @@ function CarouselComponent(args) {
             activeIndex={activeIndex}
             next={next}
             previous={previous}
+            className='carousel-fade'
+            interval='8000'
             {...args}
         >
             <CarouselIndicators
