@@ -27,16 +27,6 @@
     font-weight: 500;
 }
 
-@media screen and (min-width:1125px) {
-    .menuBody {
-        background: url(/src/app/assets/img/MenuBackground2.jpg);
-        background-position-x: right;
-        background-position-y: center;
-        background-repeat: no-repeat;
-
-    }
-}
-
 @media screen and (min-width:768px) {
     .menuCardTitle {
         font-weight: 700;
@@ -54,5 +44,35 @@
 
     .menuPageTitle {
         font-size: xx-large;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .menuCardTitle {
+        font-weight: 900;
+        font-size: 40px;
+    }
+
+    .menuCardDescription {
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .menuPageSubtitle {
+        font-size: 45px;
+    }
+
+    .menuPageTitle {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .menuBody {
+        background: url(/src/app/assets/img/MenuBackground2.jpg);
+        background-position-x: right;
+        background-position-y: center;
+        background-repeat: no-repeat;
+
     }
 }
