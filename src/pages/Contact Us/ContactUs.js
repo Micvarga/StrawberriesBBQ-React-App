@@ -17,7 +17,7 @@ const ContactUsPage = () => {
                     <hr />
                 </Col>
             </Row>
-            <ContactForm />
+            <ContactForm className='contactForm' />
         </Container>
     )
 };
