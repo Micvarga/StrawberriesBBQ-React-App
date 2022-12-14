@@ -15,10 +15,16 @@
     font-family: 'Roboto Slab', serif;
     color: #c73e48;
     margin: 15px 0px;
+    text-decoration: underline;
 }
 
 .menuCardTitle {
     font-weight: 700;
+}
+
+.menuCardDescription {
+    font-size: large;
+    font-weight: 500;
 }
 
 @media screen and (min-width:1125px) {
@@ -28,5 +34,25 @@
         background-position-y: center;
         background-repeat: no-repeat;
 
+    }
+}
+
+@media screen and (min-width:768px) {
+    .menuCardTitle {
+        font-weight: 700;
+        font-size: xx-large;
+    }
+
+    .menuCardDescription {
+        font-size: x-large;
+        font-weight: 500;
+    }
+
+    .menuPageSubtitle {
+        font-size: xx-large;
+    }
+
+    .menuPageTitle {
+        font-size: xx-large;
     }
 }

@@ -9,9 +9,9 @@ const MenuCard = ({ menuItem }) => {
         <Row>
             <Col sm='12' className='menuContent'>
                 <h3 className='menuCardTitle'>{name}</h3>
-                <h4 className='menuCardSubtitle'>{description}  {price}<a className='btn'>
+                <p className='menuCardDescription'>{description}  {price}<a className='btn'>
                     <FontAwesomeIcon icon={faCamera} size='lg' />
-                </a></h4>
+                </a></p>
             </Col>
         </Row>
     );
