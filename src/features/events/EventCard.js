@@ -1,5 +1,5 @@
 import { Card, CardBody, CardSubtitle, CardTitle } from 'reactstrap';
-import './EventCardStyles.css';
+import './EventStyles.css';
 
 const EventCard = ({ event }) => {
     const { eventLocation, dates, time } = event;

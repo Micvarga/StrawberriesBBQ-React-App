@@ -5,9 +5,7 @@ import EventsList from "../../features/events/EventsList";
 const HomePage = () => {
     return (
         <>
-            <Container>
-                <CarouselComponent />
-            </Container>
+            <CarouselComponent />
             <Container>
                 <EventsList />
             </Container>

@@ -1,0 +1,15 @@
+.contactUsMainTitle {
+    color: #c73e48;
+    font-weight: 900;
+    text-decoration: underline;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin: 35px 0px;
+}
+
+.contactUsSubTitle {
+    font-family: 'Roboto Slab', serif;
+    color: #c73e48;
+    margin: 15px 0px;
+    text-align: center;
+}

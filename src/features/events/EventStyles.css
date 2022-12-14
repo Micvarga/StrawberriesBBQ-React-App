@@ -1,0 +1,29 @@
+.eventCard {
+    background: url("/src/app/assets/img/cuttingBoard2.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Roboto Slab", sans;
+    font-weight: 900;
+    color: #451D20;
+    box-shadow: 10px 10px 5px grey;
+    border: black, solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 2rem 0rem;
+}
+
+.eventCardSubtitle {
+    font-size: larger;
+}
+
+
+
+.eventCardBody {
+    background: rgba(204, 204, 204, 0.25);
+}
+
+.eventCardTitle {
+    text-decoration: underline;
+    color: #fefefe;
+    font-size: x-large;
+}
