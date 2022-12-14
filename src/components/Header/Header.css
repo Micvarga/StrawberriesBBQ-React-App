@@ -70,3 +70,26 @@
         font-size: x-large;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .navSection {
+        padding: 0px;
+        margin: auto;
+        position: relative;
+        width: 100%;
+        max-width: 1024px;
+    }
+
+    .mainLogoImg {
+        padding: 15px 20px;
+    }
+
+    .brand-logo {
+        width: 3rem;
+    }
+
+    .nav-link {
+        margin: 0px 15px;
+        font-size: xx-large;
+    }
+}
