@@ -1,3 +1,48 @@
-Footer {
+.site-footer {
     background-color: #6a964f;
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    padding-top: 15px;
+    margin: auto;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .site-footer {
+        padding: 25px 12px;
+        width: 100%;
+        max-width: 768px;
+    }
+
+    .list-unstyled {
+        font-size: large;
+    }
+
+    .btn-link {
+        font-size: large;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .site-footer {
+        padding: 25px 22px;
+        width: 100%;
+        max-width: 1024px;
+    }
+
+    .list-unstyled {
+        font-size: x-large;
+    }
+
+    .btn-link {
+        font-size: x-large;
+    }
+
+    .footerHeaders {
+        font-size: xx-large;
+    }
+
 }
