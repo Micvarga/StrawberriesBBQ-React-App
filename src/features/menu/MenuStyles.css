@@ -2,6 +2,25 @@
     font-family: 'Caveat', cursive;
 }
 
+.menuPageTitle {
+    color: #c73e48;
+    font-weight: 900;
+    text-decoration: underline;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin: 35px 0px;
+}
+
+.menuPageSubtitle {
+    font-family: 'Roboto Slab', serif;
+    color: #c73e48;
+    margin: 15px 0px;
+}
+
+.menuCardTitle {
+    font-weight: 700;
+}
+
 @media screen and (min-width:1125px) {
     .menuBody {
         background: url(/src/app/assets/img/MenuBackground2.jpg);
@@ -10,24 +29,4 @@
         background-repeat: no-repeat;
 
     }
-}
-
-.menuPageTitle {
-    color: #c73e48;
-    font-weight: 900;
-    text-decoration: underline;
-    font-family: 'Roboto Slab', serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-}
-
-.menuPageSubtitle {
-    font-family: 'Roboto Slab', serif;
-    color: #c73e48;
-}
-
-.menuCardTitle {
-    font-weight: 700;
 }
