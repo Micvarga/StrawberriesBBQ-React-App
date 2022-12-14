@@ -27,3 +27,10 @@
     color: #fefefe;
     font-size: x-large;
 }
+
+@media screen and (min-width: 568px) {
+    .eventCard {
+        margin: 2rem 2rem;
+        font-size: large;
+    }
+}

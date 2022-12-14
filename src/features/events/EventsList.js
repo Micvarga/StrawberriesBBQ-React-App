@@ -8,7 +8,7 @@ const EventsList = () => {
         <Row className='eventsList'>
             {MONTHLYEVENTS.map((event) => {
                 return (
-                    <Col sm='12' key={event.id}>
+                    <Col xs='12' key={event.id}>
                         <EventCard event={event} />
                     </Col>
                 );
