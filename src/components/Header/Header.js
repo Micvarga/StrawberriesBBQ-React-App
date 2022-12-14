@@ -25,13 +25,13 @@ const Header = () => {
         <Container className="navSection" fluid>
             <Row>
                 <Col className="mainLogo text-center" sm='12'>
-                    <img src={logo} alt='Strawberries BBQ logo' className='img-fluid' href='/' />
+                    <img src={logo} alt='Strawberries BBQ logo' className='img-fluid mainLogoImg' href='/' />
                 </Col>
                 <Col sm='12' className="navBar">
                     <Navbar dark sticky='top' expand='md'>
                         <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
                         <Collapse isOpen={menuOpen} navbar>
-                            <Nav className='ms-auto' navbar>
+                            <Nav navbar>
                                 <NavItem>
                                     <NavLink className='nav-link' to='/'>
                                         <FontAwesomeIcon icon={faHome} size='lg' /> Home
@@ -55,7 +55,7 @@ const Header = () => {
                             </Nav>
                         </Collapse>
                         <NavbarBrand href='/' className='ms-5 d-none d-sm-block'>
-                            <img src={logo2} alt='nucamp logo' className='float-start' />
+                            <img src={logo2} alt='Strawberries brand logo' className=' brand-logo img-fluid' />
                         </NavbarBrand>
                     </Navbar>
                 </Col>
