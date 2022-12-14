@@ -45,3 +45,15 @@
         font-size: x-large;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .eventCard {
+        margin: 2rem 1rem;
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .eventCardTitle {
+        font-size: xx-large;
+    }
+}
