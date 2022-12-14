@@ -34,3 +34,14 @@
         font-size: large;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .eventCard {
+        margin: 2rem 1rem;
+        text-align: center;
+    }
+
+    .eventCardTitle {
+        font-size: x-large;
+    }
+}
