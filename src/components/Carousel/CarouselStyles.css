@@ -11,3 +11,11 @@
         height: 20rem;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .carouselImage {
+        width: 100%;
+        padding: 0px;
+        height: 25rem;
+    }
+}
