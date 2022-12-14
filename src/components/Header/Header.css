@@ -29,3 +29,17 @@ img {
     color: #fefefe;
     border-color: #fefefe;
 }
+
+@media screen and (min-width: 568px) {
+    .navSection {
+        padding: 0px;
+        margin: auto;
+        position: relative;
+        width: 100%;
+        max-width: 568px;
+    }
+
+    img {
+        padding: 15px 20px;
+    }
+}
