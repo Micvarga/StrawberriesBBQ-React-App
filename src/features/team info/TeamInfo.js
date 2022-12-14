@@ -22,8 +22,8 @@ const TeamInfo = () => {
                     <img src={teamMember} className='img-thumbnail teamMemberPhoto' />
                 </Col>
                 <Col sm='12' md='6' className="mb-5">
-                    <h3>Team Member#1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci et vitae ratione
+                    <h3 className="teamMemberTitle">Team Member#1</h3>
+                    <p className="teamMemberInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci et vitae ratione
                         perspiciatis laudantium assumenda alias, corrupti totam illo vel quia ad rerum ipsa quasi, ipsum
                         neque repellendus sequi.</p>
                 </Col>
@@ -31,8 +31,8 @@ const TeamInfo = () => {
                     <img src={teamMember2} className='img-thumbnail teamMemberPhoto' />
                 </Col>
                 <Col sm='12' md='6' className="mb-5">
-                    <h3>Team Member#2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci et vitae ratione
+                    <h3 className="teamMemberTitle">Team Member#2</h3>
+                    <p className="teamMemberInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci et vitae ratione
                         perspiciatis laudantium assumenda alas, corrupti totam illo vel quia ad rerum ipsa quasi, ipsum
                         neque repellendus sequi.</p>
                 </Col>
