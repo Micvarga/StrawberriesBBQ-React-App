@@ -3,3 +3,11 @@
     padding: 0px;
     height: 15rem;
 }
+
+@media screen and (min-width: 568px) {
+    .carouselImage {
+        width: 100%;
+        padding: 0px;
+        height: 20rem;
+    }
+}
