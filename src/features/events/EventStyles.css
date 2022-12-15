@@ -27,3 +27,33 @@
     color: #fefefe;
     font-size: x-large;
 }
+
+@media screen and (min-width: 568px) {
+    .eventCard {
+        margin: 2rem 2rem;
+        font-size: large;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .eventCard {
+        margin: 2rem 1rem;
+        text-align: center;
+    }
+
+    .eventCardTitle {
+        font-size: x-large;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .eventCard {
+        margin: 2rem 1rem;
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .eventCardTitle {
+        font-size: xx-large;
+    }
+}
