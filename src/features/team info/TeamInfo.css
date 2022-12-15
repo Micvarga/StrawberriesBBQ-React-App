@@ -32,3 +32,33 @@
     font-weight: 900;
     color: #fefefe;
 }
+
+@media screen and (min-width: 768px) {
+
+    .teamInfoSection {
+        background: url('../../app/assets/img/cuttingBoard2.jpg');
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .teamInfoTitle {
+        font-size: 45x;
+    }
+
+    .companyStoryText {
+        font-size: 30px;
+    }
+
+    .teamInfoSubTitle {
+        font-size: 40px;
+    }
+
+    .teamMemberTitle {
+        font-size: 35px;
+    }
+
+    .teamMemberInfo {
+        font-size: 30px;
+    }
+}
