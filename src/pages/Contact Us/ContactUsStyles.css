@@ -28,3 +28,20 @@
         text-align: center;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .contactUsContent {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .contactUsSubTitle {
+        font-size: 40px;
+    }
+
+    .contactUsMainTitle {
+        font-size: 50px;
+    }
+
+
+}
