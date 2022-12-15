@@ -2,7 +2,7 @@
     margin: auto;
     position: relative;
     width: 100%;
-    max-width: 450px;
+    max-width: fit-content;
 }
 
 .mainLogo {
@@ -30,12 +30,7 @@
 }
 
 @media screen and (min-width: 568px) {
-    .navSection {
-        margin: auto;
-        position: relative;
-        width: 100%;
-        max-width: 568px;
-    }
+
 
     .mainLogoImg {
         padding: 15px 20px;
@@ -47,12 +42,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .navSection {
-        margin: auto;
-        position: relative;
-        width: 100%;
-        max-width: 768px;
-    }
+
 
     .mainLogoImg {
         padding: 15px 20px;
@@ -63,18 +53,13 @@
     }
 
     .nav-link {
-        margin: 0px 6px;
+        margin: 0px 4px;
         font-size: x-large;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .navSection {
-        margin: auto;
-        position: relative;
-        width: 100%;
-        max-width: 1024px;
-    }
+
 
     .mainLogoImg {
         padding: 15px 20px;
@@ -86,6 +71,22 @@
 
     .nav-link {
         margin: 0px 15px;
+        font-size: xx-large;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    .mainLogoImg {
+        padding: 15px 20px;
+    }
+
+    .brand-logo {
+        width: 3rem;
+    }
+
+    .nav-link {
+        margin: 0px 25px;
         font-size: xx-large;
     }
 }
