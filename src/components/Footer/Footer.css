@@ -1,19 +1,16 @@
 .site-footer {
     background-color: #6a964f;
+    margin: auto;
     position: relative;
     width: 100%;
-    max-width: 450px;
     padding-top: 15px;
-    margin: auto;
 }
 
 
 
 @media screen and (min-width:768px) {
     .site-footer {
-        padding: 25px 12px;
-        width: 100%;
-        max-width: 768px;
+        padding: 25px 20px;
     }
 
     .list-unstyled {
@@ -29,8 +26,6 @@
 @media screen and (min-width:1024px) {
     .site-footer {
         padding: 25px 22px;
-        width: 100%;
-        max-width: 1024px;
     }
 
     .list-unstyled {
