@@ -27,3 +27,19 @@
         height: 30rem;
     }
 }
+
+@media screen and (min-width: 1300px) {
+    .carouselImage {
+        width: 100%;
+        padding: 0px;
+        height: 35rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .carouselImage {
+        width: 100%;
+        padding: 0px;
+        height: 40rem;
+    }
+}

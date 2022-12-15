@@ -1,6 +1,8 @@
 import { MENUITEMS } from '../../app/assets/App Data/MENUITEMS';
 import { Col, Container, Row } from 'reactstrap';
 import MenuCard from "./MenuCard";
+import Cow from '../../app/assets/img/MenuBackgroundCow.jpg';
+import Pig from '../../app/assets/img/MenuBackgroundPig.jpg';
 import './MenuStyles.css';
 
 
@@ -8,6 +10,9 @@ const MenuItemsList = () => {
     return (
         <Container className='menuBody'>
             <h1 className='menuPageTitle'>Menu</h1>
+            <div className='cowImageContainer'>
+                <img src={Cow} alt='Cow meat cuts image' className='img-fluid' />
+            </div>
             <h2 className='menuPageSubtitle'>Meats</h2>
             <Row>
                 {MENUITEMS.filter((menuItem) => {
@@ -64,6 +69,10 @@ const MenuItemsList = () => {
                     })
                 }
             </Row>
+            <div className='pigImageContainer'>
+                <img src={Pig} alt='Pig meat cuts image' className='img-fluid' />
+            </div>
+
         </Container>
     )
 };

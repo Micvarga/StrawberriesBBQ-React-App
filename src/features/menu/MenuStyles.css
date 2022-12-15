@@ -8,7 +8,7 @@
     text-decoration: underline;
     font-family: 'Roboto Slab', serif;
     text-align: center;
-    margin: 35px 0px;
+    margin: 70px 0px;
 }
 
 .menuPageSubtitle {
@@ -25,6 +25,18 @@
 .menuCardDescription {
     font-size: large;
     font-weight: 500;
+}
+
+.pigImageContainer {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.cowImageContainer {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
 }
 
 @media screen and (min-width:768px) {
@@ -67,12 +79,4 @@
     }
 }
 
-@media screen and (min-width:1300px) {
-    .menuBody {
-        background: url(/src/app/assets/img/MenuBackground2.jpg);
-        background-position-x: right;
-        background-position-y: center;
-        background-repeat: no-repeat;
-
-    }
-}
+@media screen and (min-width:1300px) {}
