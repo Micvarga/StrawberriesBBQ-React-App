@@ -1,6 +1,7 @@
 import { MENUITEMS } from '../../app/assets/App Data/MENUITEMS';
 import { Col, Container, Row } from 'reactstrap';
 import MenuCard from "./MenuCard";
+import MenuImageModal from './MenuImageModal';
 import Cow from '../../app/assets/img/MenuBackgroundCow.jpg';
 import Pig from '../../app/assets/img/MenuBackgroundPig.jpg';
 import './MenuStyles.css';
@@ -22,6 +23,7 @@ const MenuItemsList = () => {
                         return (
                             <Col key={menuItem.id} sm='12'>
                                 <MenuCard menuItem={menuItem} />
+                                <MenuImageModal menuItem={menuItem} />
                             </Col>
                         )
                     })
@@ -36,6 +38,7 @@ const MenuItemsList = () => {
                         return (
                             <Col key={menuItem.id} sm='12'>
                                 <MenuCard menuItem={menuItem} />
+                                <MenuImageModal menuItem={menuItem} />
                             </Col>
                         )
                     })
@@ -50,6 +53,7 @@ const MenuItemsList = () => {
                         return (
                             <Col key={menuItem.id} sm='12'>
                                 <MenuCard menuItem={menuItem} />
+                                <MenuImageModal menuItem={menuItem} />
                             </Col>
                         )
                     })
@@ -64,6 +68,7 @@ const MenuItemsList = () => {
                         return (
                             <Col key={menuItem.id} sm='12'>
                                 <MenuCard menuItem={menuItem} />
+                                <MenuImageModal menuItem={menuItem} />
                             </Col>
                         )
                     })

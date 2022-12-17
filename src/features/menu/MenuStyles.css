@@ -39,6 +39,37 @@
     margin: 30px 0px;
 }
 
+.menuModalHeader {
+    font-family: 'Caveat', cursive;
+    background-color: #c73e48;
+    color: #fefefe;
+    text-decoration: underline;
+}
+
+.menuModalFooter {
+    background-color: #c73e48;
+}
+
+.menuModalBody {
+    text-align: center;
+}
+
+.menuModalButton {
+    padding: 2px 3px;
+}
+
+.menuModalImage {
+    width: 100%;
+    height: 15rem;
+}
+
+@media screen and (min-width:568px) {
+    .menuModalImage {
+        width: 100%;
+        height: 25rem;
+    }
+}
+
 @media screen and (min-width:768px) {
     .menuCardTitle {
         font-weight: 700;
@@ -56,6 +87,10 @@
 
     .menuPageTitle {
         font-size: xx-large;
+    }
+
+    .menuModalButton {
+        padding: 6px 8px;
     }
 }
 
@@ -76,6 +111,10 @@
 
     .menuPageTitle {
         font-size: 60px;
+    }
+
+    .menuModalButton {
+        padding: 8px 10px;
     }
 }
 
