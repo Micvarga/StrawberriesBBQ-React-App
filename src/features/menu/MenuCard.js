@@ -10,7 +10,7 @@ const MenuCard = ({ menuItem }) => {
         <Row>
             <Col sm='12' className='menuContent'>
                 <h3 className='menuCardTitle'>{name}</h3>
-                <p>className='menuCardDescription'>{description}  {price}</p>
+                <p className='menuCardDescription'>{description}  {price}</p>
             </Col>
         </Row>
     );
