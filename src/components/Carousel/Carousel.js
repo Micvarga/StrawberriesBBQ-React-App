@@ -6,31 +6,11 @@ import {
     CarouselIndicators,
     CarouselCaption,
 } from 'reactstrap';
+import { CAROUSELIMAGES } from '../../app/assets/App Data/CAROUSELIMAGES';
 import './CarouselStyles.css';
-import brisket from '../../app/assets/img/brisketChop.jpg';
-import burntEnds from '../../app/assets/img/burntEnds.jpg';
-import ribs from '../../app/assets/img/ribsCloseUp.jpg'
 
-const images = [
-    {
-        src: brisket,
-        altText: 'Slide 1',
-        caption: 'Brisket',
-        key: 1,
-    },
-    {
-        src: burntEnds,
-        altText: 'Slide 2',
-        caption: 'Slide 2',
-        key: 2,
-    },
-    {
-        src: ribs,
-        altText: 'Slide 3',
-        caption: 'Slide 3',
-        key: 3,
-    },
-];
+
+const images = CAROUSELIMAGES;
 
 function CarouselComponent(args) {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -62,7 +42,6 @@ function CarouselComponent(args) {
             >
                 <img src={image.src} alt={image.altText} className='img-fluid carouselImage' />
                 <CarouselCaption
-                    captionText={image.caption}
                     captionHeader={image.caption}
                 />
             </CarouselItem>
