@@ -14,3 +14,8 @@
     padding-top: 3rem;
     font-family: 'Roboto Slab', serif;
 }
+
+.menuHeroLink {
+    color: inherit;
+    text-decoration: none;
+}
