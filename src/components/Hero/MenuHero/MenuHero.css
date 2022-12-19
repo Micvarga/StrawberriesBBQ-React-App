@@ -1,0 +1,15 @@
+.menuHeroSection {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../app/assets/img/varietySpread.JPG');
+    height: 15rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.menuHeroText {
+    text-align: center;
+    color: white;
+    padding-top: 3rem;
+}
