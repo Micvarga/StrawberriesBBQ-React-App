@@ -1,0 +1,16 @@
+.contactUsHeroSection {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../app/assets/img/contactUsHeroImage.jpg');
+    height: 15rem;
+    background-position: ce;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.contactUsHeroText {
+    text-align: center;
+    color: white;
+    padding-top: 3rem;
+    font-family: 'Roboto Slab', serif;
+}

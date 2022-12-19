@@ -3,6 +3,7 @@ import { Container } from "reactstrap";
 import EventsList from "../../features/events/EventsList";
 import MenuHero from "../../components/Hero/MenuHero/MenuHero";
 import EventsHero from "../../components/Hero/EventsHero/EventsHero";
+import ContactUsHero from "../../components/Hero/ContactUsHero/ContactUsHero";
 
 
 const HomePage = () => {
@@ -10,6 +11,7 @@ const HomePage = () => {
         <>
             <CarouselComponent />
             <MenuHero />
+            <ContactUsHero />
             <EventsHero />
             <Container>
                 <EventsList />
