@@ -1,9 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
 import { menuItemsReducer } from '../features/menu/menuSlice';
+import { monthlyEventsReducer } from '../features/events/eventsSlice';
 
 export const store = configureStore({
   reducer: {
-    menuItems: menuItemsReducer
+    menuItems: menuItemsReducer,
+    monthlyEvents: monthlyEventsReducer
   },
 });
