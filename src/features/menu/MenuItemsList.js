@@ -1,4 +1,5 @@
 import { selectAllMenuItems } from './menuSlice';
+import { useSelector } from 'react-redux';
 import { Col, Container, Row } from 'reactstrap';
 import MenuCard from "./MenuCard";
 import MenuImageModal from './MenuImageModal';
@@ -8,7 +9,7 @@ import './MenuStyles.css';
 
 
 const MenuItemsList = () => {
-    const menuItems = selectAllMenuItems();
+    const menuItems = useSelector(selectAllMenuItems);
     return (
         <Container className='menuBody'>
             <h1 className='menuPageTitle'>Menu</h1>
