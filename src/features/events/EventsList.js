@@ -1,10 +1,11 @@
 import { selectAllMonthlyEvents } from './eventsSlice';
+import { useSelector } from 'react-redux';
 import { Col, Row } from 'reactstrap';
 import EventCard from '../events/EventCard';
 import './EventStyles.css';
 
 const EventsList = () => {
-    const monthlyEvents = selectAllMonthlyEvents();
+    const monthlyEvents = useSelector(selectAllMonthlyEvents);
 
     return (
         <Row className='eventsList'>
