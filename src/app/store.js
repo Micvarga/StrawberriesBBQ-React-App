@@ -1,8 +1,13 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import logger from 'redux-logger';
+import { menuItemsReducer } from '../features/menu/menuSlice';
+import { monthlyEventsReducer } from '../features/events/eventsSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    menuItems: menuItemsReducer,
+    monthlyEvents: monthlyEventsReducer
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([logger])
+
 });

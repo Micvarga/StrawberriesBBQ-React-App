@@ -6,11 +6,11 @@ import {
     CarouselIndicators,
     CarouselCaption,
 } from 'reactstrap';
-import { CAROUSELIMAGES } from '../../app/assets/App Data/CAROUSELIMAGES';
+import { selectAllCarouselImages } from './carouselSlice';
 import './CarouselStyles.css';
 
 
-const images = CAROUSELIMAGES;
+const images = selectAllCarouselImages();
 
 function CarouselComponent(args) {
     const [activeIndex, setActiveIndex] = useState(0);

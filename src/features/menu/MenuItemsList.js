@@ -1,4 +1,5 @@
-import { MENUITEMS } from '../../app/assets/App Data/MENUITEMS';
+import { selectAllMenuItems } from './menuSlice';
+import { useSelector } from 'react-redux';
 import { Col, Container, Row } from 'reactstrap';
 import MenuCard from "./MenuCard";
 import MenuImageModal from './MenuImageModal';
@@ -8,6 +9,7 @@ import './MenuStyles.css';
 
 
 const MenuItemsList = () => {
+    const menuItems = useSelector(selectAllMenuItems);
     return (
         <Container className='menuBody'>
             <h1 className='menuPageTitle'>Menu</h1>
@@ -16,7 +18,7 @@ const MenuItemsList = () => {
             </div>
             <h2 className='menuPageSubtitle'>Meats</h2>
             <Row>
-                {MENUITEMS.filter((menuItem) => {
+                {menuItems.filter((menuItem) => {
                     return menuItem.type === 'meats';
                 })
                     .map((menuItem) => {
@@ -31,7 +33,7 @@ const MenuItemsList = () => {
             </Row>
             <h2 className='menuPageSubtitle'>Shareables/Snacks</h2>
             <Row>
-                {MENUITEMS.filter((menuItem) => {
+                {menuItems.filter((menuItem) => {
                     return menuItem.type === 'shareable';
                 })
                     .map((menuItem) => {
@@ -46,7 +48,7 @@ const MenuItemsList = () => {
             </Row>
             <h2 className='menuPageSubtitle'>Sides by Mama Jeffries</h2>
             <Row>
-                {MENUITEMS.filter((menuItem) => {
+                {menuItems.filter((menuItem) => {
                     return menuItem.type === 'sides';
                 })
                     .map((menuItem) => {
@@ -61,7 +63,7 @@ const MenuItemsList = () => {
             </Row>
             <h2 className='menuPageSubtitle'>Desserts</h2>
             <Row>
-                {MENUITEMS.filter((menuItem) => {
+                {menuItems.filter((menuItem) => {
                     return menuItem.type === 'desserts';
                 })
                     .map((menuItem) => {
