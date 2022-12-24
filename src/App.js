@@ -1,4 +1,7 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchmenuItems } from './features/menu/menuSlice.js';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header.js';
 import Footer from './components/Footer/Footer.js';
@@ -10,6 +13,12 @@ import AboutUsPage from './pages/About Us Page/AboutUsPage.js';
 
 
 function App() {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchmenuItems());
+  }, [dispatch]);
 
   return (
     <div className='App'>

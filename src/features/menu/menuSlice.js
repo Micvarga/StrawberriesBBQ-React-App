@@ -1,13 +1,42 @@
-import { MENUITEMS } from "../../app/assets/App Data/MENUITEMS";
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { baseUrl } from "../../app/assets/App Data/baseUrl";
+import { mapImageURL } from "../../utils/mapImageURL";
+
+export const fetchmenuItems = createAsyncThunk(
+    'menuItems/fetchMenuItems',
+    async () => {
+        const response = await fetch(baseUrl + 'menuitems');
+        if (!response.ok) {
+            return Promise.reject('unable to fetch, status: ' + response.status);
+        }
+        const data = await response.json();
+        return data;
+    }
+);
 
 const initialState = {
-    menuItemsArray: MENUITEMS
+    menuItemsArray: [],
+    isLoading: true,
+    errMsg: '',
 };
 
 const menuItemsSlice = createSlice({
     name: 'menuItems',
-    initialState
+    initialState,
+    extraReducers: {
+        [fetchmenuItems.pending]: (state) => {
+            state.isLoading = true;
+        },
+        [fetchmenuItems.fulfilled]: (state, action) => {
+            state.isLoading = false;
+            state.errMsg = '';
+            state.menuItemsArray = mapImageURL(action.payload);
+        },
+        [fetchmenuItems.rejected]: (state, action) => {
+            state.isLoading = false;
+            state.errMsg = action.error ? action.error.message : 'Fetch failed';
+        }
+    }
 });
 
 export const menuItemsReducer = menuItemsSlice.reducer;
