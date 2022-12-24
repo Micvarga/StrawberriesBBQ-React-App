@@ -1,4 +1,4 @@
-import { baseUrl } from "../app/shared/baseUrl";
+import { baseUrl } from "../app/assets/App Data/baseUrl";
 
 
 export const mapImageURL = (arr) => {
