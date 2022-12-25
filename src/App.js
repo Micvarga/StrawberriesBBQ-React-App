@@ -1,4 +1,7 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchmenuItems } from './features/menu/menuSlice.js';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header.js';
 import Footer from './components/Footer/Footer.js';
@@ -7,9 +10,17 @@ import HomePage from './pages/Home Page/HomePage.js';
 import MenuPage from './pages/Menu Page/MenuPage.js';
 import './App.css';
 import AboutUsPage from './pages/About Us Page/AboutUsPage.js';
+import { fetchMonthlyEvents } from './features/events/eventsSlice.js';
 
 
 function App() {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchmenuItems());
+    dispatch(fetchMonthlyEvents());
+  }, [dispatch]);
 
   return (
     <div className='App'>

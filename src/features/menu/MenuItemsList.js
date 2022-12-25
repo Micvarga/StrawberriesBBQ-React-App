@@ -2,6 +2,8 @@ import { selectAllMenuItems } from './menuSlice';
 import { useSelector } from 'react-redux';
 import { Col, Container, Row } from 'reactstrap';
 import MenuCard from "./MenuCard";
+import Loading from '../../components/Loading/Loading';
+import Error from '../../components/Error/Error';
 import MenuImageModal from './MenuImageModal';
 import Cow from '../../app/assets/img/MenuBackgroundCow.jpg';
 import Pig from '../../app/assets/img/MenuBackgroundPig.jpg';
@@ -10,6 +12,25 @@ import './MenuStyles.css';
 
 const MenuItemsList = () => {
     const menuItems = useSelector(selectAllMenuItems);
+    const isLoading = useSelector((state) => state.menuItems.isLoading);
+    const errMsg = useSelector((state) => state.menuItems.errMsg);
+
+    if (isLoading) {
+        return (
+            <Row>
+                <Loading />
+            </Row>
+        );
+    }
+
+    if (errMsg) {
+        return (
+            <Row>
+                <Error errMsg={errMsg} />
+            </Row>
+        );
+    }
+
     return (
         <Container className='menuBody'>
             <h1 className='menuPageTitle'>Menu</h1>
