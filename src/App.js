@@ -10,6 +10,7 @@ import HomePage from './pages/Home Page/HomePage.js';
 import MenuPage from './pages/Menu Page/MenuPage.js';
 import './App.css';
 import AboutUsPage from './pages/About Us Page/AboutUsPage.js';
+import { fetchMonthlyEvents } from './features/events/eventsSlice.js';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 
   useEffect(() => {
     dispatch(fetchmenuItems());
+    dispatch(fetchMonthlyEvents());
   }, [dispatch]);
 
   return (
