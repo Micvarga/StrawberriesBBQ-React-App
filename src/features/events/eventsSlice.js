@@ -1,15 +1,16 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { baseUrl } from "../../app/assets/App Data/baseUrl";
+import { db } from "../../firebase/firebase.config";
+import { collection, getDocs } from 'firebase/firestore';
 
 export const fetchMonthlyEvents = createAsyncThunk(
     'monthlyEvents/fetchMonthlyEvents',
     async () => {
-        const response = await fetch(baseUrl + 'monthlyEvents');
-        if (!response.ok) {
-            return Promise.reject('unable to fetch, status: ' + response.status);
-        }
-        const data = await response.json();
-        return data;
+        const querySnapshot = await getDocs(collection(db, 'monthlyEvents'));
+        const monthlyEvents = [];
+        querySnapshot.forEach((doc) => {
+            monthlyEvents.push(doc.data());
+        });
+        return monthlyEvents;
     }
 );
 
