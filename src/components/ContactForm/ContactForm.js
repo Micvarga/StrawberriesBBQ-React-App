@@ -1,18 +1,26 @@
 import { Button, Label, Col, FormGroup } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import { useRef } from 'react';
+import { useState } from 'react';
 import { validateContactForm } from '../../utils/validateContactForm';
+import { ToastContainer, toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
-
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = () => {
+    const [statusMessage, setStatusMessage] = useState("");
+
+    const notify = () => toast(statusMessage);
 
     const sendEmail = (object) => {
         emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, object, process.env.REACT_APP_PUBLIC_KEY)
             .then((result) => {
-                console.log(result.text)
+                console.log(result.text, result.status);
+                setStatusMessage("Request Sent Successfully!");
+
             }, (error) => {
-                console.log(error.text)
+                console.log(error.text);
+                setStatusMessage(`${error.text} happended`);
+
             })
     };
 
@@ -96,13 +104,24 @@ const ContactForm = () => {
                 </FormGroup>
                 <FormGroup row>
                     <Col md={{ size: '10', offset: '2' }}>
-                        <Button type='submit' color='primary' >
-                            Send Request
-                        </Button>
+                        <div>
+                            <Button type='submit' color='primary' onClick={notify}>Send Request</Button>
+                            <ToastContainer
+                                position='top-center'
+                                autoClose={5000}
+                                hideProgressBar={false}
+                                newestOnTop={false}
+                                closeOnClick
+                                rtl={false}
+                                pauseOnFocusLoss
+                                draggable
+                                pauseOnHover
+                                theme='light'
+                            />
+                        </div>
                     </Col>
                 </FormGroup>
             </Form>
-
         </Formik>
     )
 };
