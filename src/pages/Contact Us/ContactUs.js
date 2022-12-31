@@ -1,5 +1,5 @@
 import ContactForm from "../../components/ContactForm/ContactForm";
-import NewsLetterSignUpForm from "../../components/Mailchimp/NewsLetterSignUpForm";
+import NewsLetterFormContainer from "../../components/Mailchimp/NewsLetterFormContainer";
 import { Container, Col, Row } from "reactstrap";
 import './ContactUsStyles.css';
 
@@ -18,7 +18,7 @@ const ContactUsPage = () => {
                     <hr />
                 </Col>
             </Row>
-            <NewsLetterSignUpForm />
+            <NewsLetterFormContainer />
             <Row>
                 <Col sm='12'>
                     <h2 className="contactUsSubTitle">Book us for your next event!</h2>
