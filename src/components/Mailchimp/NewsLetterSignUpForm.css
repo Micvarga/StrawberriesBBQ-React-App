@@ -1,0 +1,11 @@
+.mc__alert--sucess {
+    color: green;
+}
+
+.mc__alert--error {
+    color: red;
+}
+
+.mc__alert {
+    text-align: center;
+}
