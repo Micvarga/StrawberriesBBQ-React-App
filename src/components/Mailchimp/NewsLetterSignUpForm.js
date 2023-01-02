@@ -1,5 +1,6 @@
 import { Button, Label, Col, FormGroup, Input, Form } from 'reactstrap';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import "./NewsLetterSignUpForm.css";
 
 const initialValues = {
     firstName: "",
@@ -11,6 +12,15 @@ const NewsLetterSignUpForm = ({ status, message, onValidated }) => {
 
     const [formValues, updateFormValues] = useState(initialValues);
     const { firstName, lastName, email } = formValues;
+
+    useEffect(() => {
+        if (status === "success") clearFields();
+    }, [status]);
+
+    const clearFields = () => {
+        updateFormValues(initialValues);
+    };
+
 
     const handleChange = (e) => {
         updateFormValues({
@@ -35,6 +45,25 @@ const NewsLetterSignUpForm = ({ status, message, onValidated }) => {
     return (
 
         <Form onSubmit={(e) => handleSubmit(e)}>
+
+            {status === "sending" && (
+                <div className="mc__alert mc__alert--sending">
+                    sending...
+                </div>
+            )}
+            {status === "error" && (
+                <div
+                    className="mc__alert mc__alert--error"
+                    dangerouslySetInnerHTML={{ __html: message }}
+                />
+            )}
+            {status === "success" && (
+                <div
+                    className="mc__alert mc__alert--success"
+                    dangerouslySetInnerHTML={{ __html: message }}
+                />
+            )}
+
             <FormGroup row>
                 <Label for='email' md='2'>
                     Email
@@ -82,9 +111,11 @@ const NewsLetterSignUpForm = ({ status, message, onValidated }) => {
             </FormGroup>
             <FormGroup row>
                 <Col md={{ size: '10', offset: '2' }}>
-                    <Button type='submit' color='primary' >
-                        Subscribe
-                    </Button>
+                    <div>
+                        <Button type='submit' color='primary' >
+                            Subscribe
+                        </Button>
+                    </div>
                 </Col>
             </FormGroup>
         </Form>
