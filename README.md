@@ -1,46 +1,43 @@
-# Getting Started with Create React App and Redux
+# Strawberries BBQ Version 2 - React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## About the Project
 
-## Available Scripts
+I created this Single Page Application to act as a digital business card for a family members BBQ business in the Chicago metro area. The site was intended to be used in conjunction with the companies established social media accounts to increase their market presence and help draw in potential clients through a more professional medium.
 
-In the project directory, you can run:
+## What I learned
 
-### `npm start`
+This was my second personal web development project and my first React project. This project gave me my initial experience with refactoring code from a previous version of this project made with simple HTML, CSS, JS and Bootstrap. I learned how to manage local state and global state, and make external calls. I enjoyed making individual and reusable components and see how they can really help out with creating templates to use in freelance work when building slight variations of different websites. I gained experience with using Google Firebase and its hosting features. I also used the Firestore feature to create a database to hold monthly event information and menu item descriptions so that they could be updated with ease. Lastly I gained experience with using the MailChimp API used to collect newsletter submission and to help facilitate distribution of newsletters for future events.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Responsive design.
+- Home Page with Monthly Listed Events and Hero sections that route to the desired information.
+- About Us Page.
+- Contact Page.
+- Event Request Form that routes form data to designated email accoutn using Email.js.
+- News Letter Sign Up Form integrated with Mailchimp to build newsletter audience.
+- Menu Page with Menu Item Modals that contain a description and image of the menu item.
 
-### `npm test`
+## Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- HTML
+- CSS
+- JavaScript
+- React
 
-### `npm run build`
+## Credits
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Strawberries BBQ
+- Font Awesome
+- Node.js
+- Bootstrap 5
+- Bootstrap Social
+- Google Fonts
+- Email.js
+- Mailchimp
+- Firebase
+- Firestore
+- Figma
+- Reactstrap
+- Formik
+- React-Router-DOM
